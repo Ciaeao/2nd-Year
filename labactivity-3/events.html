@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cafenometry - Events</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Georgia", serif;
+      }
+
+      body {
+        padding-top: 100px;
+        margin-top: 50px;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: url(images/eventsbg.jpg) no-repeat center center/cover;
+      }
+
+      header {
+        background-color: #30261c;
+        padding: 15px 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      header h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      header img {
+        height: 55px;
+        vertical-align: middle;
+      }
+
+      header .tagline {
+        font-size: 12px;
+        display: block;
+        color: #ccc;
+      }
+
+      .events {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 40px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .event-card {
+        background: rgba(60, 20, 15, 0.9);
+        border: 2px solid #fff;
+        border-radius: 15px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 15px;
+      }
+
+      .event-card img {
+        width: 100px;
+        height: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .event-text h2 {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .event-text p {
+        font-size: 12px;
+        margin: 5px 0 0;
+        color: #ddd;
+      }
+
+      footer {
+        background-color: #30261c;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .footer-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-left img {
+        height: 45px;
+        margin-right: 10px;
+      }
+
+      .footer-left h1 {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+
+      footer nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .bullets {
+        height: 25px;
+        vertical-align: middle;
+      }
+
+      footer nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 25px;
+        font-size: 1rem;
+      }
+
+      footer p.copyright {
+        font-size: 0.8rem;
+        margin-top: 10px;
+        text-align: center;
+        width: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        UPCOMING EVENTS AT
+        <span class="img"
+          ><img src="image 1.png" alt="Coffeemug" /> cafenometry</span
+        >
+        <span class="tagline">THE CLASS YOU’LL NEVER SKIP</span>
+      </h1>
+    </header>
+
+    <section class="events">
+      <div class="event-card">
+        <img src="image 1.png" alt="Coffeemug" />
+        <img src="images/livemusic.jpg" alt="Live Music" />
+        <div class="event-text">
+          <h2>LIVE MUSIC NIGHTS</h2>
+          <p>
+            Every Friday at 7PM. Enjoy local acoustic performers while sipping
+            your favorite brew.
+          </p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="image 1.png" alt="Coffeemug" />
+        <img src="images/bookclub.jpg" alt="Book Club" />
+        <div class="event-text">
+          <h2>BOOK CLUB MONDAYS</h2>
+          <p>
+            Join our community book club every first Monday evening. Coffee
+            discounts for members.
+          </p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="image 1.png" alt="Coffeemug" />
+        <img src="images/latteart.jpg" alt="Latte Art" />
+        <div class="event-text">
+          <h2>LATTE ART WORKSHOPS</h2>
+          <p>
+            Monthly Saturday morning workshops teaching customers how to create
+            latte art designs.
+          </p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="image 1.png" alt="Coffeemug" />
+        <img src="images/coffeetasting.jpg" alt="Coffee Tasting" />
+        <div class="event-text">
+          <h2>COFFEE TASTING FLIGHTS</h2>
+          <p>
+            Sample several brews and learn about sourcing and roasting from our
+            baristas.
+          </p>
+        </div>
+      </div>
+
+      <div class="event-card" style="grid-column: span 2">
+        <img src="image 1.png" alt="Coffeemug" />
+        <img src="images/micnights.jpg" alt="Open Mic" />
+        <div class="event-text">
+          <h2>OPEN MIC NIGHTS</h2>
+          <p>
+            A monthly showcase for poets, musicians, and storytellers. Free
+            drinks for performers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <img src="image 1.png" alt="Cafenometry Logo" />
+        <h1>cafenometry</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="#"><strong>Events</strong></a>
+      </nav>
+      <p class="copyright">
+        Copyright @ 2025 Cafenometry | All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>

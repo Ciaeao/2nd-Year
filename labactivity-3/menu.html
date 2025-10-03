@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafenometry - Menu</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Georgia", serif;
+      }
+
+      header {
+        background-color: #30261c;
+        text-align: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+      }
+
+      header img {
+        height: 55px;
+        vertical-align: middle;
+      }
+
+      header h1 {
+        color: white;
+        font-size: 24px;
+        display: inline-block;
+        margin-left: 10px;
+      }
+
+      header .tagline {
+        font-size: 12px;
+        display: block;
+        color: #ccc;
+      }
+
+      body {
+        background-color: #3e3f29;
+        padding-top: 100px;
+        padding-bottom: 80px;
+      }
+
+      .menu-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .menu-column {
+        background-color: #4a4b32;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+      }
+
+      .menu-column img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .menu-column h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #fff;
+        padding-bottom: 8px;
+      }
+
+      .menu-column h3 {
+        margin: 15px 0 8px;
+        font-size: 1.1rem;
+      }
+
+      .menu-item {
+        text-align: left;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .menu-item strong {
+        display: block;
+        margin: 10px 0 5px;
+      }
+
+      footer {
+        background-color: #2d241c;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .footer-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-left img {
+        height: 45px;
+        margin-right: 10px;
+      }
+
+      .footer-left h1 {
+        font-size: 1.2rem;
+        margin: 0;
+      }
+
+      footer nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      footer nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 25px;
+        font-size: 1rem;
+      }
+
+      footer p.copyright {
+        font-size: 0.8rem;
+        margin-top: 10px;
+        text-align: center;
+        width: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="img">
+          <img src="image 1.png" alt="Cafenometry Logo" />cafenometry</span
+        >
+        <span class="tagline">THE CLASS YOU'LL NEVER SKIP</span>
+      </h1>
+    </header>
+
+    <section class="menu-section">
+      <div class="menu-column">
+        <h2>COFFEE DRINKS</h2>
+        <img src="coffee drinks.jpg" alt="Signature Latte" />
+        <p>
+          <strong>TRY OUR SIGNATURE LATTE!</strong><br />Cafenometry Latte
+          (Hot/Iced)<br />140 PHP
+        </p>
+        <br />
+        <div class="menu-item">
+          <strong>ESPRESSO-BASED / HOT</strong>
+          Espresso ----------------------------------------------- 60 PHP<br />
+          Double Espresso ---------------------------------------- 80 PHP<br />
+          Americano ---------------------------------------------- 90 PHP<br />
+          Cafe Latte -------------------------------------------- 110 PHP<br />
+          Cafe Mocha -------------------------------------------- 120 PHP<br />
+          Cappuccino -------------------------------------------- 110 PHP<br />
+          Spanish Latte ----------------------------------------- 130 PHP<br />
+          Caramel Latte ----------------------------------------- 130 PHP<br />
+          Hazelnut Latte ---------------------------------------- 120 PHP<br />
+          Vanilla Latte ----------------------------------------- 120 PHP
+          <br /><br />
+          <strong>ICED</strong>
+          Iced Americano ---------------------------------------- 100 PHP<br />
+          Iced Cafe Latte --------------------------------------- 120 PHP<br />
+          Iced Cafe Mocha --------------------------------------- 120 PHP<br />
+          Iced Cappuccino --------------------------------------- 110 PHP<br />
+          Cold Brew --------------------------------------------- 120 PHP<br />
+          Iced Spanish Latte ------------------------------------ 140 PHP<br />
+          Iced Caramel Latte ------------------------------------ 140 PHP<br />
+          Iced Hazelnut Latte ----------------------------------- 130 PHP<br />
+          Iced Vanilla Latte ------------------------------------ 130 PHP
+          <br /><br />
+          <strong>ADD-ONS</strong>
+          Extra Shot --------------------------------------------- 30 PHP<br />
+          Flavored Syrup ----------------------------------------- 25 PHP<br />
+          Almond / Oat Milk -------------------------------------- 30 PHP
+        </div>
+      </div>
+
+      <div class="menu-column">
+        <h2>NON-COFFEE DRINKS</h2>
+        <img src="non coffee drinks.jpg" alt="Smoothie" />
+        <div class="menu-item">
+          <strong>TEAS & OTHER DRINKS</strong>
+          <strong>(Hot)</strong>
+          Chai Latte -------------------------------------------- 110 PHP<br />
+          Black Tea ---------------------------------------------- 70 PHP<br />
+          Green Tea ---------------------------------------------- 75 PHP<br />
+          Mocha Latte ------------------------------------------- 110 PHP<br />
+          Hot Chocolate ----------------------------------------- 110 PHP<br />
+          Milk Tea ----------------------------------------------- 90 PHP
+          <br /><br />
+          <strong>(Iced)</strong>
+          Iced Chai Latte --------------------------------------- 120 PHP<br />
+          Iced Tea ----------------------------------------------- 80 PHP<br />
+          Iced Lemonade ------------------------------------------ 80 PHP<br />
+          Iced Matcha Latte ------------------------------------- 120 PHP<br />
+          Iced Chocolate ---------------------------------------- 120 PHP<br />
+          Pearl Milk Tea ---------------------------------------- 120 PHP
+          <br /><br />
+          <strong>SMOOTHIES & MILKSHAKES</strong>
+          Mango Shake ------------------------------------------- 120 PHP<br />
+          Strawberry Banana Shake ---------------------------- 120 PHP<br />
+          Mixed Berry Smoothie ------------------------------- 130 PHP<br />
+          Peanut Butter Banana Smoothie -------------------- 130 PHP<br />
+          Avocado Shake ----------------------------------------- 140 PHP
+          <br /><br />
+          Chocolate Milkshake -------------------------------- 130 PHP<br />
+          Vanilla Milkshake ------------------------------------- 120 PHP<br />
+          Strawberry Milkshake ------------------------------- 130 PHP<br />
+          Caramel Milkshake ---------------------------------- 150 PHP<br />
+          Oreo Milkshake ---------------------------------------- 150 PHP<br />
+          Matcha Shake ------------------------------------------ 150 PHP
+        </div>
+      </div>
+
+      <div class="menu-column">
+        <h2>PASTRIES & SNACKS</h2>
+        <img src="pastries.jpeg" alt="Pastries" />
+        <div class="menu-item">
+          <strong>PASTRIES & DESSERTS</strong>
+          Croissant ---------------------------------------------- 70 PHP<br />
+          Pain Au Chocolat --------------------------------------- 85 PHP<br />
+          Cinnamon Roll ------------------------------------------ 90 PHP<br />
+          Muffin (Blueberry/Chocolate) ------------------------- 80 PHP<br />
+          French Toast --------------------------------------------- 65 PHP<br />
+          Cookie (Chocolate Chip/Oatmeal) -------------------- 50 PHP<br />
+          Chocolate Brownie -------------------------------------- 70 PHP<br />
+          Waffles ------------------------------------------------ 80 PHP<br />
+          Fruit Cup ---------------------------------------------- 70 PHP<br />
+          Yogurt Parfait ---------------------------------------- 100 PHP
+          <br /><br />
+          <strong>SAVORY</strong>
+          Ham & Cheese Sandwich ------------------------------- 90 PHP<br />
+          Tuna Sandwich ----------------------------------------- 90 PHP<br />
+          BLT Sandwich ----------------------------------------- 110 PHP<br />
+          Corned Beef Pandesal --------------------------------- 100 PHP<br />
+          Beef Sliders ----------------------------------------- 120 PHP<br />
+          Cheese Quesadilla ------------------------------------ 110 PHP<br />
+          Veggie Wrap ------------------------------------------ 110 PHP
+          <br /><br />
+          <em
+            >*Dairy-free and gluten-free options are available.<br />
+            *Specialty drinks may have additional charges.</em
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <img src="image 1.png" alt="Cafenometry Logo" />
+        <h1>cafenometry</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#"><strong>Menu</strong></a>
+        <a href="events.html">Events</a>
+      </nav>
+      <p class="copyright">
+        Copyright @ 2025 Cafenometry | All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
